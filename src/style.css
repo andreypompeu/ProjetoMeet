@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Red+Hat+Display:wght@300;400;500;700&display=swap);
+
 * {
     padding: 0;
     margin: 0;
@@ -8,8 +10,7 @@
     font-family: "Red Hat Display", sans-serif;
   }
   
-
-:root {
+  :root {
     --btn1-color: #4d96a9;
     --btn2-3-color: #855fb1;
     --second-btn1-color: #8fe3f9;
@@ -18,25 +19,20 @@
     --h1-color: #28283d;
   }
   
-header {
+  header {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 80px;
   }
 
-  .div1{
+  .div1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top:80px;
+    margin-top: 80px;
   }
-
-  .main{
-    text-align: center;
-    width: 500px;
-  }
-
+  
   .main-text1 {
     text-align: center;
     width: 500px;
@@ -60,7 +56,7 @@ header {
   }
   .btn1 {
     background-color: var(--btn1-color);
-    width: 200px;
+    width: 150px;
     height: 50px;
     margin-right: 20px;
   }
@@ -85,17 +81,53 @@ header {
     transform: translateY(5px);
     color: #28283d;
   }
-  
+
   .sep1 {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  .pics {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 50px;
-  }
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.pics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+      margin-top: 40px;
+    }
   
+    .div1 {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+  
+    .main-text1 {
+      width: 80%;
+    }
+  
+    .main-text1 h1 {
+      font-size: 30px;
+    }
+  
+    .btn1,
+    .btn2 {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      .pics {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 20px;
+      }
+  }
